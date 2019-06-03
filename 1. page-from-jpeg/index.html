@@ -39,6 +39,9 @@
     h6 {
         margin-bottom: 0.5rem;
     }
+    .about {
+        margin-bottom: 14px;
+    }
     .contact {
         width: 48px;
         border-radius: 50%;
@@ -48,6 +51,7 @@
     }
     .follow-us {
         margin-top: 24px;
+        margin-bottom: 24px;
     }
     a {
         color:#009DF2;
@@ -55,9 +59,6 @@
     }
     .follow-us img {
         width: 24px;
-    }
-    .footer {
-        background-color: rgba(225, 225, 225, 0.5);
     }
     .search-input {
         height: 1.7rem;
@@ -114,8 +115,14 @@
         height: 320px;
     }
     .crd-footer {
+        width: 100%;
         position: absolute;
         bottom: 0;
+    }
+    @media only screen and (min-width : 992px) {
+        .footer {
+            background-color: rgba(225, 225, 225, 0.5);
+        }
     }
    </style>
 </head>
@@ -134,7 +141,7 @@
             </div>
             <div class="row">
                 <div class="col-3"></div>
-                <div class="col-4">
+                <div class="col-md-4 col-xs-12 about">
                     <h6>About</h6>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -144,73 +151,72 @@
                         Pellentesque facilisis convallis sapien, et tempor velit rhoncus sit amet.
                         Fusce at ante euismod, mollis ante nec, imperdiet ex.
                     </p>
-                </div>
-                <div class="col-2 no-right-padding">
-                        <h6>Contact</h6>
-                        <div class="row">
-                            <div class="col-4">
-                                <img class="contact" src="./assets/gosling.jpg">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6>Area of Focus</h6>
+                            <div>
+                                <img class="env-img" src="./assets/internet.svg">
+                                <span class="item-label">Economy, Politics & Environment</span>
+                                <img class="health-img" src="./assets/culture.svg">
+                                <span class="item-label">Health & Culture</span>
                             </div>
-                            <div class="col-8 contact-content">
-                                <div class="row">
-                                    <div class="col">
-                                        Ivan Ivanov
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="#">ivan@mail.ru</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row follow-us">
-                            <div class="col">
-                                <h6>Follow us</h6>
-                                <div>
-                                    <img src="./assets/web.svg">
-                                    <a href="#">lorem.com</a>
-                                </div>
-                                <div>
-                                    <img src="./assets/in.svg">
-                                    <a href="#">linkedin.com/lorem</a>
-                                </div>    
-                                
+                            <div class="mt-1">
+                                <img class="admin-img" src="./assets/handshake.svg">
+                                <span class="item-label">Public Administration & Non-Profit</span>
                             </div>
                         </div>
                     </div>
-                <div class="col-3"></div>
-            </div>
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <h6>Area of Focus</h6>
-                    <div>
-                        <img class="env-img" src="./assets/internet.svg">
-                        <span class="item-label">Economy, Politics & Environment</span>
-                        <img class="health-img" src="./assets/culture.svg">
-                        <span class="item-label">Health & Culture</span>
+                </div>
+                <div class="col-md-2 col-xs-12 no-right-padding">
+                    <h6>Contact</h6>
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="contact" src="./assets/gosling.jpg">
+                        </div>
+                        <div class="col-8 contact-content">
+                            <div class="row">
+                                <div class="col">
+                                    Ivan Ivanov
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#">ivan@mail.ru</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mt-1">
-                        <img class="admin-img" src="./assets/handshake.svg">
-                        <span class="item-label">Public Administration & Non-Profit</span>
+                    <div class="row follow-us">
+                        <div class="col">
+                            <h6>Follow us</h6>
+                            <div>
+                                <img src="./assets/web.svg">
+                                <a href="#">lorem.com</a>
+                            </div>
+                            <div>
+                                <img src="./assets/in.svg">
+                                <a href="#">linkedin.com/lorem</a>
+                            </div>    
+                            
+                        </div>
                     </div>
                 </div>
-            </div>
+            <div class="col-3"></div>
+        </div> 
         </div>
         <div class="footer mt-4">
             <div class="row pt-4">
-                <div class="col-3"></div>
-                <div class="col-3 mt-3">
+                <div class="col-md-3 col-xs-1"></div>
+                <div class="col-md-3 col-xs-4 mt-3">
                     <h5>Lorem of Lorem Ipsum</h5>
                 </div>
-                <div class="col-3 mt-3 no-right-padding">
+                <div class="col-md-3 col-xs-4 mt-3 no-right-padding">
                     <input type="text" class="form-control search-input" placeholder="Search">
                 </div>
             </div>
             <div class="row mt-3 pb-4">
                 <div class="col-3"></div>
-                <div class="col-2 no-right-padding">
+                <div class="col-md-2 col-xs-12 no-right-padding">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title">
@@ -231,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 no-right-padding">
+                <div class="col-md-2 col-xs-12 no-right-padding">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title">
@@ -256,7 +262,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 no-right-padding">
+                <div class="col-md-2 col-xs-12 no-right-padding">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title">
