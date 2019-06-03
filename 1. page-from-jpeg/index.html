@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <title>Sample</title>
+  <style type="text/css">
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    p {
+        margin-bottom: 0.3rem;
+    }
+    .header {
+        height: 200px;
+        background-image: url(./assets/background-image.jpg);
+        background-position-y: 35%;
+        background-size: cover;
+        margin-bottom: 96px;
+    }
+    .container {
+        max-width: 984px;
+    }
+    .logo {
+        width: 142px;
+        border-radius: 50%;
+        position: relative;
+        top: 130px;
+        left: 25%;
+    }
+    h4 {
+        margin-bottom: 1.5rem;
+    }
+    h6 {
+        margin-bottom: 0.5rem;
+    }
+    .contact {
+        width: 48px;
+        border-radius: 50%;
+    }
+    .contact-content {
+        padding-top: 6px;
+    }
+    .follow-us {
+        margin-top: 24px;
+    }
+    a {
+        color:#009DF2;
+        text-decoration: none;
+    }
+    .follow-us img {
+        width: 24px;
+    }
+    .footer {
+        background-color: rgba(225, 225, 225, 0.5);
+    }
+    .search-input {
+        height: 1.7rem;
+        background: #fff url(./assets/search.svg) 6px 5px no-repeat no-repeat;
+        background-size: 16px;
+        padding-left: 25px;
+        font-size: 12px;
+    }
+    .no-right-padding {
+        padding-right: 0;
+    }
+    .card-body {
+        padding: 0.8rem;
+        font-size: 10px;
+    }
+    .details-btn {
+        background-color: #FFA500;
+        color: #FFFFFF;
+        font-size: 14px;
+    }
+    .env-img {
+        width: 18px;
+        background-color: #5A4D99;
+    }
+    .health-img {
+        width: 18px;
+        background-color: #BFCC36;
+    }
+    .admin-img {
+        width: 18px;
+        background-color: #1A587A;
+    }
+    .item-label {
+        padding-top: 2px;
+        padding-bottom: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: rgba(225, 225, 225, 0.5);
+        margin-left: -4px;
+        font-size: 10px;
+    }
+    .item-logo {
+        width: 40px;
+        border-radius: 5%;
+    }
+    .card-title h6 {
+        font-size: 12px;
+        padding: 0;
+    }
+    span.btn-sm {
+        padding: 0 .25rem;
+    }
+    .card {
+        height: 320px;
+    }
+    .crd-footer {
+        position: absolute;
+        bottom: 0;
+    }
+   </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="./assets/logo.jpg">
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <h4>Lorem Ipsum</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-4">
+                    <h6>About</h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aliquam ut nisi ligula. Suspendisse porta in sem sed tincidunt. 
+                        Sed ornare tristique tristique. Vestibulum rhoncus tortor massa, id mattis orci fermentum nec. 
+                        Maecenas consequat, urna sed mattis consequat, neque neque elementum leo, sed dapibus orci dolor nec tellus. Aenean sit amet urna in justo efficitur luctus. 
+                        Pellentesque facilisis convallis sapien, et tempor velit rhoncus sit amet.
+                        Fusce at ante euismod, mollis ante nec, imperdiet ex.
+                    </p>
+                </div>
+                <div class="col-2 no-right-padding">
+                        <h6>Contact</h6>
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="contact" src="./assets/gosling.jpg">
+                            </div>
+                            <div class="col-8 contact-content">
+                                <div class="row">
+                                    <div class="col">
+                                        Ivan Ivanov
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">ivan@mail.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row follow-us">
+                            <div class="col">
+                                <h6>Follow us</h6>
+                                <div>
+                                    <img src="./assets/web.svg">
+                                    <a href="#">lorem.com</a>
+                                </div>
+                                <div>
+                                    <img src="./assets/in.svg">
+                                    <a href="#">linkedin.com/lorem</a>
+                                </div>    
+                                
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <h6>Area of Focus</h6>
+                    <div>
+                        <img class="env-img" src="./assets/internet.svg">
+                        <span class="item-label">Economy, Politics & Environment</span>
+                        <img class="health-img" src="./assets/culture.svg">
+                        <span class="item-label">Health & Culture</span>
+                    </div>
+                    <div class="mt-1">
+                        <img class="admin-img" src="./assets/handshake.svg">
+                        <span class="item-label">Public Administration & Non-Profit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer mt-4">
+            <div class="row pt-4">
+                <div class="col-3"></div>
+                <div class="col-3 mt-3">
+                    <h5>Lorem of Lorem Ipsum</h5>
+                </div>
+                <div class="col-3 mt-3 no-right-padding">
+                    <input type="text" class="form-control search-input" placeholder="Search">
+                </div>
+            </div>
+            <div class="row mt-3 pb-4">
+                <div class="col-3"></div>
+                <div class="col-2 no-right-padding">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <div class="row">
+                                    <div class="col-5"><img class="item-logo" src="./assets/item-logo.png"></div>
+                                    <h6 class="col-7">Lorem upsum Dolor</h6>
+                                </div>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <span class="btn btn-sm btn-outline-info">Public</span>   
+                        </div>
+                        <div class="card-body crd-footer">
+                            <div class="text-right">
+                                <h6>Lorem</h6>
+                                No fees & no time restrictions
+                            </div>
+                            <a href="#" class="btn btn-block details-btn mt-2">View details...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 no-right-padding">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <div class="row">
+                                    <div class="col-5"><img class="item-logo" src="./assets/item-logo.png"></div>
+                                    <h6 class="col-7">Lorem upsum Dolor</h6>
+                                </div>
+                            </div>
+                            <p class="card-text">Lorem by Lorem upsum Dolor</p>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p>
+                                <span class="font-weight-bold">Format:</span> csv
+                            </p>
+                            <span class="btn btn-sm btn-outline-info">Public</span>
+                        </div>
+                        <div class="card-body crd-footer">
+                            <div class="text-right">
+                                <h6>Lorem</h6>
+                                No fees & no time restrictions
+                            </div>
+                            <a href="#" class="btn btn-block details-btn mt-2">View details...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 no-right-padding">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <div class="row">
+                                    <div class="col-5"><img class="item-logo" src="./assets/item-logo.png"></div>
+                                    <h6 class="col-7">Lorem upsum Dolor</h6>
+                                </div>
+                            </div>
+                            <p class="card-text">Lorem by Lorem upsum Dolor</p>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <p>
+                                <span class="font-weight-bold">Format:</span> csv
+                            </p>
+                            <span class="btn btn-sm btn-outline-info">Info</span>
+                        </div>
+                        <div class="card-body crd-footer">
+                            <div class="text-right">
+                                <h6>Lorem</h6>
+                                No fees & no time restrictions
+                            </div>
+                            <a href="#" class="btn btn-block details-btn mt-2">View details...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
